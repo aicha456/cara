@@ -46,7 +46,7 @@ def best_model(bran):
    
    
     ax = px.bar(
-        x=v['model'],y=v['price',title=bran + ' vs Price']
+        x=v['model'],y=v['price'],title=bran + ' vs Price')
     )
     # plt.title(bran + ' vs Price')
     # plt.ylabel('Price')
