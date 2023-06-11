@@ -82,7 +82,7 @@ def main():
 
     if choice == "Home":
         st.subheader("Home")
-        lottie_he = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_EPex2ugpSG.json")
+        lottie_he = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_oxctjhsg.json")
         st_lottie(
             lottie_he,
         )
