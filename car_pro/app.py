@@ -34,7 +34,7 @@ def model_loader(path):
     mode = joblib.load(path)
     return mode
 
-moodel = model_loader("tree.pkl" )
+moodel = model_loader("car_pro/tree.pkl" )
 
 
 
