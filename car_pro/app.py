@@ -42,12 +42,17 @@ def best_model(bran):
     a = df[df['brand'] == bran]
     o = pd.pivot_table(a, index='model', values='price',
                        aggfunc=np.mean).sort_values(by='price', ascending=False)
-    v = o.head(4)
-    ax = v.T.plot(kind='bar', ylabel='price')
-    plt.title(bran + ' vs Price')
-    plt.ylabel('Price')
-    plt.xlabel(bran)
-    st.pyplot(plt)
+    v = o.head(4).reset_index()
+   
+   
+    ax = px.bar(
+        x=v['model'],y=v['price',title=bran + ' vs Price']
+    )
+    # plt.title(bran + ' vs Price')
+    # plt.ylabel('Price')
+    # plt.xlabel(bran)
+    st.plotly_chart(ax)
+
 
     return
 def load_lottieurl(url: str):
