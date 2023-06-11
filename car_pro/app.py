@@ -27,7 +27,7 @@ from manage import *
 import statsmodels.api as sm
 
 
-df = pd.read_csv("car (2).csv")
+df = pd.read_csv("/Users/macos/cara/car_pro/car (2).csv")
 
 @st.cache(allow_output_mutation=True)
 def model_loader(path):
